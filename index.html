@@ -36,16 +36,28 @@
         <h3>USER ADMIN</h3>
       </div>
       <ul class="list-unstyled components">
-        <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i> Dashboard</a></li>
-        <li><a href="#"><i class="fa fa-credit-card fa-fw"></i> Payment Manager</a></li>
-        <li><a href="#"><i class="fas fa-camera-retro"></i> Gallery/Video Manager</a></li>
-        <li><a href="#"><i class="fas fa-file-pdf"></i> E-Brochure Manager</a></li>
-        <li><a href="#"><i class="fa fa-info fa-fw"></i> Details Manager</a></li>
-        <li><a href="#"><i class="fa fa-trophy fa-fw"></i> Awards and Certifications</a></li>
-        <li><a href="#"><i class="fa fa-link fa-fw"></i> Link Manager</a></li>
-        <li><a href="#"><i class="fa fa-user fa-fw"></i> Testimonials Manager</a></li>
-        <li><a href="#"><i class="fa fa-question-circle fa-fw"></i> Support</a></li>
-        <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+        <li class="active">
+          <a href="" data-toggle="collapse" aria-expanded="false">
+            <i class="fa fa-home fa-fw"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
+            Details</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li><a href="payment.html"><i class="fa fa-credit-card fa-fw"></i> Payment Manager</a></li>
+            <li><a href="link.html"><i class="fa fa-link fa-fw"></i> Link Manager</a></li>
+            <li><a href="testimonial.html"><i class="fa fa-user fa-fw"></i> Testimonials Manager</a>
+            </li>
+            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i> Gallery/Video Manager</a>
+            </li>
+            <li><a href="e-brochure.html"><i class="fas fa-file-pdf"></i> E-Brochure Manager</a></li>
+            <li><a href="details.html"><i class="fa fa-info fa-fw"></i> Details Manager</a></li>
+            <li><a href="awards.html"><i class="fa fa-trophy fa-fw"></i> Awards and Certification
+                Manager</a>
+          </ul>
+        </li>
+        <li><a href="notification.html"><i class="fas fa-bell"></i> Notifications</a></li>
+        <li><a href="analytics.html"><i class="fas fa-chart-line"></i> Analytics</a></li>
         <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
       </ul>
     </nav>
@@ -139,9 +151,7 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-  <script src="./src/js/witlyf.js">
-
-  </script>
+  <script src="./src/js/witlyf.js"></script>
 </body>
 
 </html>

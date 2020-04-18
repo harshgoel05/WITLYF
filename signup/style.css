@@ -4,7 +4,7 @@
 }
 body {
 	position: relative;
-	background-color: antiquewhite;
+	background-color:white;
 }
 html {
 	height: 100%;
@@ -18,6 +18,20 @@ p {
 	text-transform: uppercase;
 	color: #673ab7;
 	font-weight: normal;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+	border-radius: 50%;
+
+}
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
 }
 
 #msform {
@@ -37,7 +51,9 @@ p {
 	position: relative;
 	margin-top: 100px;
 }
-
+fieldset label{
+	padding: 10px 10px 10px 10px;
+}
 .form-card {
 	text-align: left;
 }

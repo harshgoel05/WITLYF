@@ -15,11 +15,6 @@ p {
 	color: grey;
 }
 
-#heading {
-	text-transform: uppercase;
-	color: #673ab7;
-	font-weight: normal;
-}
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -34,15 +29,15 @@ img {
 	margin: 40px 0;
 }
 
-#msform {
+#witlyfform {
 	text-align: center;
 	position: relative;
 	margin-top: 20px;
 }
-
-#msform fieldset {
+.step1,
+.step2,
+.step3 {
 	background: white;
-	border: 0 none;
 	border-radius: 0.5rem;
 	box-sizing: border-box;
 	width: 100%;
@@ -50,20 +45,27 @@ img {
 	padding-bottom: 20px;
 	position: relative;
 	margin-top: 100px;
+	display: none;
+	transition: 0.3s ease-in all;
+}
+.step1 {
+	display: block;
+	margin-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 fieldset label {
 	padding: 10px 10px 10px 10px;
 }
+.step1 label {
+	padding: 15px 0px 0px 0px !important;
+}
+
 .form-card {
 	text-align: left;
 }
-
-#msform fieldset:not(:first-of-type) {
-	display: none;
-}
-
-#msform input,
-#msform textarea {
+#witlyfform input,
+#witlyfform textarea {
 	padding: 8px 15px 8px 15px;
 	border: 1px solid #ccc;
 	border-radius: 0px;
@@ -72,24 +74,25 @@ fieldset label {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: montserrat;
-	color: #2c3e50;
-	background-color: #eceff1;
+	color: grey;
 	font-size: 16px;
 	letter-spacing: 1px;
 }
 
-#msform input:focus,
-#msform textarea:focus {
+#witlyfform input:focus,
+#witlyfform textarea:focus {
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
-	border: 1px solid #673ab7;
+	border: 1px solid #924200;
 	outline-width: 0;
 }
-
-#msform .action-button {
+.step1 input {
+	margin-bottom: 0px !important;
+}
+#witlyfform .action-button {
 	width: 100px;
-	background: #673ab7;
+	background: #f67000;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -100,12 +103,11 @@ fieldset label {
 	float: right;
 }
 
-#msform .action-button:hover,
-#msform .action-button:focus {
-	background-color: #311b92;
+#witlyfform .action-button:hover,
+#witlyfform .action-button:focus {
+	background-color: #c95a00;
 }
-
-#msform .action-button-previous {
+#witlyfform .action-button-previous {
 	width: 100px;
 	background: #616161;
 	font-weight: bold;
@@ -118,8 +120,8 @@ fieldset label {
 	float: right;
 }
 
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
+#witlyfform .action-button-previous:hover,
+#witlyfform .action-button-previous:focus {
 	background-color: #000000;
 }
 
@@ -131,20 +133,14 @@ fieldset label {
 
 .fs-title {
 	font-size: 25px;
-	color: #673ab7;
+	color: #f67000;
 	margin-bottom: 15px;
 	font-weight: normal;
 	text-align: left;
 }
-
-.purple-text {
-	color: #673ab7;
-	font-weight: normal;
-}
-
 .steps {
 	font-size: 25px;
-	color: gray;
+	color: #c95a00;
 	margin-bottom: 10px;
 	font-weight: normal;
 	text-align: right;
@@ -164,12 +160,12 @@ fieldset label {
 }
 #progressbar {
 	overflow: hidden;
-	color: lightgrey;
+	color: rgb(218, 216, 216);
 	width: 40%;
 }
 
 #progressbar .active {
-	color: #673ab7;
+	color: #f67000;
 }
 
 #progressbar li {
@@ -182,15 +178,15 @@ fieldset label {
 	text-transform: uppercase;
 }
 
-#progressbar #account:before {
+#progressbar #welcome:before {
 	content: "1";
 }
 
-#progressbar #personal:before {
+#progressbar #plans:before {
 	content: "2";
 }
 
-#progressbar #payment:before {
+#progressbar #checkout:before {
 	content: "3";
 }
 
@@ -200,16 +196,26 @@ fieldset label {
 	line-height: 32px;
 	display: block;
 	font-size: 18px;
-	color: grey;
+	color: gray;
 	background: white;
 	border-radius: 50%;
 	margin: 5px auto 4px auto;
 	padding: 2px;
 	z-index: 100;
-	border: 1px solid green;
+	border: 1px solid grey;
 }
 
-#progressbar li:after {
+#progressbar li:nth-child(1):after {
+	content: "";
+	width: 84%;
+	height: 2px;
+	background: lightgray;
+	position: absolute;
+	left: 58%;
+	top: 23px;
+	z-index: 1;
+}
+#progressbar li:nth-child(2):after {
 	content: "";
 	width: 84%;
 	height: 2px;
@@ -222,7 +228,7 @@ fieldset label {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-	background: #673ab7;
+	background: #f67000;
 	color: white;
 }
 

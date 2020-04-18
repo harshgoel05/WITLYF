@@ -1,67 +1,40 @@
 $(document).ready(function () {
-	var current_fs, next_fs, previous_fs; //fieldsets
-	var opacity;
-	var current = 1;
-	var steps = $("fieldset").length;
-
-	$(".next").click(function () {
-		current_fs = $(this).parent();
-		next_fs = $(this).parent().next();
-
-		//Add Class Active
-		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-		//show the next fieldset
-		next_fs.show();
-		//hide the current fieldset with style
-		current_fs.animate(
-			{ opacity: 0 },
-			{
-				step: function (now) {
-					// for making fielset appear animation
-					opacity = 1 - now;
-
-					current_fs.css({
-						display: "none",
-						position: "relative",
-					});
-					next_fs.css({ opacity: opacity });
-				},
-				duration: 500,
-			}
-		);
+	$(".next1").click(function () {
+		//Steps
+		$(".step1").css("display", "none");
+		$(".step2").css("display", "block");
+		$(".step3").css("display", "none");
+		//Progress Bar
+		$("#plans").addClass("active");
+		// $(".step1").removeClass("active");
+		// $(".step1").removeClass("active");
 	});
-
-	// $(".previous").click(function () {
-	// 	current_fs = $(this).parent();
-	// 	previous_fs = $(this).parent().prev();
-
-	// 	//Remove class active
-	// 	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-	// 	//show the previous fieldset
-	// 	previous_fs.show();
-
-	// 	//hide the current fieldset with style
-	// 	current_fs.animate(
-	// 		{ opacity: 0 },
-	// 		{
-	// 			step: function (now) {
-	// 				// for making fielset appear animation
-	// 				opacity = 1 - now;
-
-	// 				current_fs.css({
-	// 					display: "none",
-	// 					position: "relative",
-	// 				});
-	// 				previous_fs.css({ opacity: opacity });
-	// 			},
-	// 			duration: 500,
-	// 		}
-	// 	);
-	// });
-
-	$(".submit").click(function () {
-		return false;
+	$(".next2").click(function () {
+		$(".step1").css("display", "none");
+		$(".step3").css("display", "block");
+		$(".step2").css("display", "none");
+		$("#checkout").addClass("active");
+	});
+	$(".next3").click(function () {
+		alert("Thanks");
+	});
+	$(".previous2").click(function () {
+		//Steps
+		$(".step2").css("display", "none");
+		$(".step1").css("display", "block");
+		$(".step3").css("display", "none");
+		//Progress Bar
+		$("#plans").removeClass("active");
+		// $(".step1").removeClass("active");
+		// $(".step1").removeClass("active");
+	});
+	$(".previous3").click(function () {
+		$(".step1").css("display", "none");
+		$(".step2").css("display", "block");
+		$(".step3").css("display", "none");
+		$("#checkout").removeClass("active");
+	});
+	$(".next3").click(function () {
+		alert("Thanks");
 	});
 });

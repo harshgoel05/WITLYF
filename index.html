@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="./src/css/witlyf.css">
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top superwhitenav">
+    <nav class="navbar navbar-expand-lg sticky-top witlyf-superwhitenav">
         <ul class="navbar-nav mr-auto">
-            <button class="btn btn-primary" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+            <button class="btn btn-primary" id="witlyf-sidebarCollapse"><i class="fa fa-bars"></i></button>
         </ul>
-        <ul class="navbar-nav topnav">
-            <form class="searchbar">
+        <ul class="navbar-nav witlyf-topnav">
+            <form class="witlyf-searchbar">
                 <input type="text" placeholder="" name="search">
                 <i class="fa fa-search"></i>
             </form>
@@ -39,12 +39,12 @@
             </li>
         </ul>
     </nav>
-    <nav id="sidebar">
+    <nav id="witlyf-sidebar">
         <ul class="list-unstyled">
-            <a id="sidebarclose"> <i class="fa fa-times"></i> </a>
+            <a id="witlyf-sidebarclose"> <i class="fa fa-times"></i> </a>
             <div class="text-center">
-                <div class="profile">
-                    <img class="profileimage" src="./src/images/person.jpg" alt="">
+                <div class="witlyf-profile">
+                    <img class="witlyf-profileimage" src="./src/images/person.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Company Name</p>
                     <button class="btn btn-primary">Edit my IDy</button>
@@ -58,12 +58,14 @@
                     </div>
                 </div>
             </div>
-            <li class="activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i> Dashboard</a>
+            <li class="witlyf-activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i>
+                    Dashboard</a>
             </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
+            <li class="witlyf-updatedetailsdropdown">
+                <a href="#witlyf-pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Update
                     Details</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
+                <ul class="collapse list-unstyled" id="witlyf-pageSubmenu">
                     <li><a>Profile Pic & Cover</a></li>
                     <li><a>Personal Details</a></li>
                     <li><a>Organisation Details</a></li>
@@ -86,20 +88,20 @@
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
         </ul>
     </nav>
-    <div class="yellownav">
-        <div class="leftitems">
+    <div class="witlyf-yellownav">
+        <div class="witlyf-leftitems">
             <a>Dashboard</a>
             <a>Recent Updates</a>
         </div>
-        <div class="rightitems">
+        <div class="witlyf-rightitems">
             <a><i class="fa fa-play"></i>Getting Started</a>
             <a> <i class="fa fa-gift"></i> Refer a Friend</a>
         </div>
     </div>
-    <div class="content">
+    <div class="witlyf-content">
         <div class="row">
             <div class="col-md-3">
-                <ul class="list-unstyled bluebar">
+                <ul class="list-unstyled witlyf-bluebar">
                     <li><a>Profile Pic & Cover</a></li>
                     <li><a>Personal Details</a></li>
                     <li><a>Organisation Details</a></li>

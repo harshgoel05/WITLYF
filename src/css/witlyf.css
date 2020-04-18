@@ -29,16 +29,16 @@ a:focus {
 /* ---------------------------------------------------
     TOP NAVBAR
 ----------------------------------------------------- */
-.superwhitenav button {
+.witlyf-superwhitenav button {
 	display: none;
 	background-color: #f67000;
 	outline: none;
 	border: none;
 	box-shadow: none;
 }
-.superwhitenav button:hover,
-.superwhitenav button:active,
-.superwhitenav button:focus {
+.witlyf-superwhitenav button:hover,
+.witlyf-superwhitenav button:active,
+.witlyf-superwhitenav button:focus {
 	background-color: #b15000 !important;
 	outline: none;
 	border: none;
@@ -47,42 +47,42 @@ a:focus {
 .navbar-light .nav-link {
 	color: black !important;
 }
-.topnav .nav-item {
+.witlyf-topnav .nav-item {
 	color: black !important;
 }
-.topnav .nav-item .fa {
+.witlyf-topnav .nav-item .fa {
 	color: black !important;
 }
-.topnav .nav-item {
+.witlyf-topnav .nav-item {
 	border-radius: 50%;
 	background-color: #efefef !important;
 	padding: 2px 4px;
 	margin-left: 10px;
 	font-size: 12px;
 }
-.searchbar {
+.witlyf-searchbar {
 	padding-top: 13px;
 	position: relative;
 	padding: 2px 4px 4px 4px !important	;
 }
-.searchbar input[type="text"] {
+.witlyf-searchbar input[type="text"] {
 	font-size: 17px;
 	background: #efefef;
 	border: none;
 	border-radius: 13px 13px 13px 13px;
 	margin-top: 3px;
 }
-.searchbar .fa-search {
+.witlyf-searchbar .fa-search {
 	font-size: 12px;
 	border-left: none;
 	cursor: pointer;
 	margin-left: -20px;
 }
 /* ---------------------------------------------------
-    SIDEBAR
+		Sidebar
 ----------------------------------------------------- */
 
-#sidebar {
+#witlyf-sidebar {
 	width: 17%;
 	position: fixed;
 	top: 65px;
@@ -94,56 +94,56 @@ a:focus {
 	color: #efefef;
 	overflow-y: auto;
 }
-#sidebarclose {
+#witlyf-sidebarclose {
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	display: none;
 }
 
-#sidebar.active {
+#witlyf-sidebar.active {
 	margin-left: 0px;
 	width: 100%;
 }
 
-#sidebar ul li a {
+#witlyf-sidebar ul li a {
 	padding: 10px;
 	padding-left: 30px;
 	font-size: 14px;
 	display: block;
 }
-#sidebar ul .activenav {
+#witlyf-sidebar ul .witlyf-activenav {
 	background: #db6400;
 	color: rgb(255, 255, 255);
 }
-#sidebar ul svg {
+#witlyf-sidebar ul svg {
 	margin-right: 10px !important;
 }
 
-#sidebar ul li a:hover {
+#witlyf-sidebar ul li a:hover {
 	background: #db6400;
 	color: rgb(255, 255, 255);
 }
-.profile {
+.witlyf-profile {
 	margin-bottom: 30px;
 }
-.profile .profileimage {
+.witlyf-profile .witlyf-profileimage {
 	border-radius: 50%;
 	max-width: 70%;
 	margin-top: 20px;
 	margin-bottom: 23px;
 }
-.profile h4 {
+.witlyf-profile h4 {
 	margin-bottom: 0;
 	color: white;
 }
-.profile p {
+.witlyf-profile p {
 	color: white;
 	font-size: 12px;
 	margin-top: 0;
 	padding-top: 0;
 }
-.profile .btn-primary {
+.witlyf-profile .btn-primary {
 	background-color: white;
 	outline: none;
 	color: #f57000;
@@ -151,27 +151,29 @@ a:focus {
 	border-radius: 15px 15px;
 	width: 75%;
 }
-.profile .row {
+.witlyf-profile .row {
 	margin: 10px 0px;
 }
-.profile .row .col-sm-6 {
+.witlyf-profile .row .col-sm-6 {
 	margin: 0;
 	padding: 0;
 	width: auto;
 }
-.profile .row .btn-primary {
+.witlyf-profile .row .btn-primary {
 	background-color: transparent;
 	color: white;
 	border: 1px solid white;
 	font-size: 12px;
 	width: 80%;
 }
-
+.witlyf-sidebar .updatedetailsdropdown {
+	display: none;
+}
 /* ---------------------------------------------------
     YELLOW NAVBAR
 ----------------------------------------------------- */
 
-.yellownav {
+.witlyf-yellownav {
 	width: 83%;
 	background-color: #fef7dd;
 	height: 40px;
@@ -180,45 +182,45 @@ a:focus {
 	padding: 10px;
 }
 
-.yellownav .leftitems {
+.witlyf-yellownav .witlyf-leftitems {
 	float: left;
 }
-.yellownav a {
+.witlyf-yellownav a {
 	margin: 0 20px;
 }
-.yellownav .rightitems {
+.witlyf-yellownav .witlyf-rightitems {
 	float: right;
-	color: chocolate;
+	color: #b15000;
 }
 /* ---------------------------------------------------
    Body Content
 ----------------------------------------------------- */
-.content {
+.witlyf-content {
 	width: 83%;
 	float: right;
 }
-.content .col-md-3 {
+.witlyf-content .col-md-3 {
 	background-color: #efefff;
 	padding: 40px 30px;
 	height: 100%;
 	margin: 20px 10px 5px 40px;
 }
 
-.bluebar li {
+.witlyf-bluebar li {
 	border-bottom: 1px solid #a8a8a8;
 	padding: 10px;
 }
-.bluebar li:nth-last-child(1) {
+.witlyf-bluebar li:nth-last-child(1) {
 	border-bottom: none;
 }
 
 @media (max-width: 800px) {
-	.content {
+	.witlyf-content {
 		width: 100%;
 		background-color: #fef7dd;
 		float: right;
 	}
-	.content .col-md-3 {
+	.witlyf-content .col-md-3 {
 		display: none;
 	}
 }
@@ -228,66 +230,69 @@ a:focus {
 ----------------------------------------------------- */
 
 @media (max-width: 800px) {
-	.superwhitenav .navbar-nav {
+	.witlyf-superwhitenav .navbar-nav {
 		flex-direction: row;
 	}
-	.topnav .nav-item {
+	.witlyf-topnav .nav-item {
 		padding: 1px 8px;
 		margin-left: 10px;
 		font-size: 12px;
 	}
-	#sidebar {
+	#witlyf-sidebar {
 		margin-left: -250px;
 	}
-	#sidebar .active {
+	#witlyf-sidebar .active {
 		margin-left: 0px !important;
 	}
-	.superwhitenav button {
+	.witlyf-superwhitenav button {
 		display: block;
 		float: left;
 	}
-	.yellownav {
+	.witlyf-yellownav {
 		height: 60px;
 		font-size: 13px;
 		padding: 10px;
 		width: 100%;
 	}
-	.yellownav a {
+	.witlyf-yellownav a {
 		margin: 20px 25px;
 	}
-	.yellownav .leftitems {
+	.witlyf-yellownav .witlyf-leftitems {
 		text-align: left !important;
 		float: left;
 	}
-	.yellownav .leftitems a:nth-child(1) {
+	.witlyf-yellownav .witlyf-leftitems a:nth-child(1) {
 		margin-right: 65px;
 	}
-	.yellownav .rightitems {
+	.witlyf-yellownav .witlyf-rightitems {
 		text-align: right !important;
 		float: left;
 	}
-	#sidebarclose {
+	.witlyf-sidebarclose {
 		display: block;
 	}
-	.searchbar {
+	.witlyf-searchbar {
 		padding-top: 13px;
 		position: relative;
 		padding: 2px 4px 4px 4px !important	;
 	}
-	.searchbar input[type="text"] {
+	.witlyf-searchbar input[type="text"] {
 		width: 100px;
 	}
-	.profile .row .col-sm-6 {
+	.witlyf-profile .row .col-sm-6 {
 		margin: auto;
 	}
-	.profile .row .btn-primary {
+	.witlyf-profile .row .btn-primary {
 		background-color: transparent;
 		color: white;
 		border: 1px solid white;
 		font-size: 12px;
 		width: 120%;
 	}
-	.profile {
+	.witlyf-profile {
 		margin-bottom: 3px;
+	}
+	.witlyf-sidebar .witlyf-updatedetailsdropdown {
+		display: block;
 	}
 }

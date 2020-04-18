@@ -2,220 +2,224 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="./style.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="./style.css">
 
-    <title>Hello, world!</title>
+	<title>Hello, world!</title>
 </head>
 
 <body>
-    <div class="row fullwidth justify-content-center text-center pt-2">
-        <ul id="progressbar">
-            <li class="active" id="account">Welcome</li>
-            <li id="personal"><strong>Plans & Pricing</strong></li>
-            <li id="payment"><strong>Checkout</strong></li>
-            <!-- <li id="confirm"><strong>Finish</strong></li> -->
-        </ul>
-    </div>
-    <div class="row justify-content-center text-center">
-        <form id="msform">
-            <fieldset>
-                <div class="form-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <h2 class="fs-title">Account Information:</h2>
-                        </div>
-                    </div> <label class="fieldlabels">Email: *</label> <input type="email" name="email"
-                        placeholder="Email Id" /> <label class="fieldlabels">Username: *</label> <input type="text"
-                        name="uname" placeholder="UserName" /> <label class="fieldlabels">Password:
-                        *</label> <input type="password" name="pwd" placeholder="Password" /> <label
-                        class="fieldlabels">Confirm Password: *</label> <input type="password" name="cpwd"
-                        placeholder="Confirm Password" />
-                </div> <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h3 class="fs-title" style="text-align: center;">
-                    Choose your menu
-                </h3>
-                <br>
-                (don't worry you can change your menu every week)
-                <div class="row" style="padding-top: 10px;">
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="card mb-4 ml-4" style="width: 400px; text-align: left;">
-                            <div class="card-body">
-                                <p class="card-text">2-SERVING</p>
-                                <h4 class="card-title fs-title">Signature</h4>
-                                    <h6 class="card-subtitle mb-4 text-muted">
-                                        Signature for 4 menu<br>
-                                        2 recipes per week,perfect for 4 people<br>
-                                        (You may skip or cancel anytime)
-                                    </h6>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                          <button class="btn btn-primary" type="button">2</button>
-                                          <button class="btn btn-outline-secondary" type="button">3</button>
-                                        </div>
-                                      </div>
-                                      <p class="card-text">recipes per week<br>(each serves 2)</p>
-                                      <hr>
-                                      <p>
-                                          $99 per saving &emsp; &emsp13; &emsp; &emsp; &emsp;$59.94<br>
-                                          FREE shipping &emsp; &emsp13;  &emsp; &emsp; &emsp;weekly total<br>
-                                      </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="card ml-4" style="width: 400px; text-align: left;">
-                            <div class="card-body">
-                                <p class="card-text">4-SERVING</p>
-                                <h4 class="card-title fs-title">Signature for 4</h4>
-                                    <h6 class="card-subtitle mb-4 text-muted">
-                                        Signature for 4 menu<br>
-                                        2 recipes per week,perfect for 4 people<br>
-                                        (You may skip or cancel anytime)
-                                    </h6>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                          <button class="btn btn-primary" type="button">2</button>
-                                          <button class="btn btn-outline-secondary" type="button">3</button>
-                                          <button class="btn btn-outline-secondary" type="button">4</button>
-                                        </div>
-                                      </div>
-                                      <p class="card-text">recipes per week<br>(each serves 4)</p>
-                                      <hr>
-                                      <p>
-                                          $99 per saving &emsp; &emsp13; &emsp; &emsp; &emsp;$59.94<br>
-                                          FREE shipping &emsp; &emsp13;  &emsp; &emsp; &emsp;weekly total<br>
-                                      </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- <input type="button" name="next" class="next action-button" value="Next" /> <input type="button"
-                    name="previous" class="previous action-button-previous" value="Previous" />
-            </fieldset>
-            <fieldset>
-                <div class="row">
-                    <div class="col-lg-8">
-                <div class="card card1 mt-4">
-                 <div class="card-body">
-                  <div class="form-card">
+	<div class="row fullwidth justify-content-center text-center pt-2">
+		<ul id="progressbar">
+			<li class="active" id="account">Welcome</li>
+			<li id="personal"><strong>Plans & Pricing</strong></li>
+			<li id="payment"><strong>Checkout</strong></li>
+			<!-- <li id="confirm"><strong>Finish</strong></li> -->
+		</ul>
+	</div>
+	<div class="row justify-content-center text-center">
+		<form id="msform">
+			<fieldset class="step1">
+				<div class="form-card">
+					<div class="row">
+						<div class="col-7">
+							<h2 class="fs-title">Account Information:</h2>
+						</div>
+					</div> <label class="fieldlabels">Email: *</label> <input type="email" name="email"
+						placeholder="Email Id" />
+					<label class="fieldlabels">Username: *</label> <input type="text" name="uname"
+						placeholder="UserName" />
+					<label class="fieldlabels">Password:
+						*</label> <input type="password" name="pwd" placeholder="Password" /> <label
+						class="fieldlabels">Confirm
+						Password: *</label> <input type="password" name="cpwd" placeholder="Confirm Password" />
+				</div> <input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset class="step2">
+				<h3 class="fs-title" style="text-align: center;">
+					Choose your menu
+				</h3>
+				<br>
+				(don't worry you can change your menu every week)
+				<div class="row" style="padding-top: 10px;">
+					<div class="col-lg-6 col-sm-12">
+						<div class="card mb-4 ml-4" style="width: 400px; text-align: left;">
+							<div class="card-body">
+								<p class="card-text">2-SERVING</p>
+								<h4 class="card-title fs-title">Signature</h4>
+								<h6 class="card-subtitle mb-4 text-muted">
+									Signature for 4 menu<br>
+									2 recipes per week,perfect for 4 people<br>
+									(You may skip or cancel anytime)
+								</h6>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<button class="btn btn-primary" type="button">2</button>
+										<button class="btn btn-outline-secondary" type="button">3</button>
+									</div>
+								</div>
+								<p class="card-text">recipes per week<br>(each serves 2)</p>
+								<hr>
+								<p>
+									$99 per saving &emsp; &emsp13; &emsp; &emsp; &emsp;$59.94<br>
+									FREE shipping &emsp; &emsp13; &emsp; &emsp; &emsp;weekly total<br>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-12">
+						<div class="card ml-4" style="width: 400px; text-align: left;">
+							<div class="card-body">
+								<p class="card-text">4-SERVING</p>
+								<h4 class="card-title fs-title">Signature for 4</h4>
+								<h6 class="card-subtitle mb-4 text-muted">
+									Signature for 4 menu<br>
+									2 recipes per week,perfect for 4 people<br>
+									(You may skip or cancel anytime)
+								</h6>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<button class="btn btn-primary" type="button">2</button>
+										<button class="btn btn-outline-secondary" type="button">3</button>
+										<button class="btn btn-outline-secondary" type="button">4</button>
+									</div>
+								</div>
+								<p class="card-text">recipes per week<br>(each serves 4)</p>
+								<hr>
+								<p>
+									$99 per saving &emsp; &emsp13; &emsp; &emsp; &emsp;$59.94<br>
+									FREE shipping &emsp; &emsp13; &emsp; &emsp; &emsp;weekly total<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input type="button" name="next" class="next action-button" value="Next" />
+				<!-- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+			</fieldset>
+			<fieldset class="step3">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="card card1 mt-4">
+							<div class="card-body">
+								<div class="form-card">
 
-                            <h2 class="fs-title">Delivery information:</h2>
-                            <form>
-                                <div class="form-row">
-                                  <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="FIRST NAME">
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <input type="text" class="form-control" placeholder="LAST NAME">
-                                  </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-lg-6">
-                                      <input type="text" class="form-control" placeholder="ADDRESS LINE 1 *">
-                                    </div>
-                                    <div class="col-lg-6">
-                                      <input type="text" class="form-control" placeholder="ADDRESS LINE 2">
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-lg-4">
-                                      <input type="text" class="form-control" placeholder="CITY">
-                                    </div>
-                                    <div class="col-lg-4">
-                                      <input type="text" class="form-control" placeholder="STATE">
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" class="form-control" placeholder="ZIP">
-                                      </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-lg-6">
-                                      <input type="text" class="form-control" placeholder="PHONE *">
-                                    </div>
-                                    <div class="col-lg-6">
-                                      <input type="text" class="form-control" placeholder="SPECIAL INSTRUCTIONS">
-                                    </div>
-                                  </div>
-                                  <h2 class="fs-title">Billing information:</h2>
-                                <div class="form-row">
-                                    <div class="col-lg-6">
-                                      <input type="text" class="form-control" placeholder="cCARD NUMBER">
-                                    </div>
-                                    <div class="col-lg-2">
-                                      <input type="text" class="form-control" placeholder="EXPIRATION">
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <input type="text" class="form-control" placeholder="CCV">
-                                      </div>
-                                      <div class="col-lg-2">
-                                        <input type="text" class="form-control" placeholder=" BILLING ZIP">
-                                      </div>
-                                  </div>
-                              </form>
-                </div> 
-                <input type="button" name="next" class="next action-button" value="Submit" /> <input
-                type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                 </div>
-                </div>
-                </div>
+									<h2 class="fs-title">Delivery information:</h2>
+									<form>
+										<div class="form-row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="FIRST NAME">
+											</div>
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="LAST NAME">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="ADDRESS LINE 1 *">
+											</div>
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="ADDRESS LINE 2">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-lg-4">
+												<input type="text" class="form-control" placeholder="CITY">
+											</div>
+											<div class="col-lg-4">
+												<input type="text" class="form-control" placeholder="STATE">
+											</div>
+											<div class="col-lg-4">
+												<input type="text" class="form-control" placeholder="ZIP">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="PHONE *">
+											</div>
+											<div class="col-lg-6">
+												<input type="text" class="form-control"
+													placeholder="SPECIAL INSTRUCTIONS">
+											</div>
+										</div>
+										<h2 class="fs-title">Billing information:</h2>
+										<div class="form-row">
+											<div class="col-lg-6">
+												<input type="text" class="form-control" placeholder="cCARD NUMBER">
+											</div>
+											<div class="col-lg-2">
+												<input type="text" class="form-control" placeholder="EXPIRATION">
+											</div>
+											<div class="col-lg-2">
+												<input type="text" class="form-control" placeholder="CCV">
+											</div>
+											<div class="col-lg-2">
+												<input type="text" class="form-control" placeholder=" BILLING ZIP">
+											</div>
+										</div>
+									</form>
+								</div>
+								<input type="button" name="next" class="next action-button" value="Submit" />
+							</div>
+						</div>
+					</div>
 
-<div class="col-lg-4">
-                <div class="card card2 mt-4" style="width:400px; text-align: left; height:550px;">
-                    <div class="card-body">
-                        <h4 class="card-title fs-title">ODER SUMMARY</h4>
-                        <p class="card-text">EMAIL ADDRESS  <a href="#" class="card-link">EDIT</a><br>
-                        <h6 class="card-subtitle mb-2 text-muted">example@gmail.com</h6></p>
-                        <p class="card-text">YOUR PLAN <br>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                Signature for 4 menu<br>
-                                2 recipes per week,perfect for 4 people<br>
-                                (You may skip or cancel anytime)
-                            </h6>
-                        </p>
-                        <p class="card-text">DIETARY SELECTIONS <br>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                You will be able to indicate preference and choose<br>
-                                your meals after checkout<br>
-                            </h6>
-                        </p>
+					<div class="col-lg-4">
+						<div class="card card2 mt-4" style="width:400px; text-align: left; height:550px;">
+							<div class="card-body">
+								<h4 class="card-title fs-title">ODER SUMMARY</h4>
+								<p class="card-text">EMAIL ADDRESS <a href="#" class="card-link">EDIT</a><br>
+									<h6 class="card-subtitle mb-2 text-muted">example@gmail.com</h6>
+								</p>
+								<p class="card-text">YOUR PLAN <br>
+									<h6 class="card-subtitle mb-2 text-muted">
+										Signature for 4 menu<br>
+										2 recipes per week,perfect for 4 people<br>
+										(You may skip or cancel anytime)
+									</h6>
+								</p>
+								<p class="card-text">DIETARY SELECTIONS <br>
+									<h6 class="card-subtitle mb-2 text-muted">
+										You will be able to indicate preference and choose<br>
+										your meals after checkout<br>
+									</h6>
+								</p>
 
-                        <p class="card-text">FIRST DELIVERY DATE<br>
-                            <input type="date" id="birthday" name="birthday">
-                              </div>
-                        </p>
-                    <hr>
-                    <pre class="card-text">
+								<p class="card-text">FIRST DELIVERY DATE<br>
+									<input type="date" id="birthday" name="birthday">
+							</div>
+							</p>
+							<hr>
+							<pre class="card-text">
  SUBTOTAL                                $71.92
  SHIPPING                                  FREE
  TOTAL                                   $71.92
                     </pre>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </fieldset>
-          </form>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+						</div>
+					</div>
+				</div>
+				<!-- <input type="button" name="previous" class="previous action-button-previous previouslast"
+					value="Previous" /> -->
+			</fieldset>
+		</form>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>

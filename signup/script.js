@@ -32,34 +32,34 @@ $(document).ready(function () {
 		);
 	});
 
-	$(".previous").click(function () {
-		current_fs = $(this).parent();
-		previous_fs = $(this).parent().prev();
+	// $(".previous").click(function () {
+	// 	current_fs = $(this).parent();
+	// 	previous_fs = $(this).parent().prev();
 
-		//Remove class active
-		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+	// 	//Remove class active
+	// 	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 
-		//show the previous fieldset
-		previous_fs.show();
+	// 	//show the previous fieldset
+	// 	previous_fs.show();
 
-		//hide the current fieldset with style
-		current_fs.animate(
-			{ opacity: 0 },
-			{
-				step: function (now) {
-					// for making fielset appear animation
-					opacity = 1 - now;
+	// 	//hide the current fieldset with style
+	// 	current_fs.animate(
+	// 		{ opacity: 0 },
+	// 		{
+	// 			step: function (now) {
+	// 				// for making fielset appear animation
+	// 				opacity = 1 - now;
 
-					current_fs.css({
-						display: "none",
-						position: "relative",
-					});
-					previous_fs.css({ opacity: opacity });
-				},
-				duration: 500,
-			}
-		);
-	});
+	// 				current_fs.css({
+	// 					display: "none",
+	// 					position: "relative",
+	// 				});
+	// 				previous_fs.css({ opacity: opacity });
+	// 			},
+	// 			duration: 500,
+	// 		}
+	// 	);
+	// });
 
 	$(".submit").click(function () {
 		return false;

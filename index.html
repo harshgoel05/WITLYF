@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="./src/css/witlyf.css">
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top superwhitenav">
         <ul class="navbar-nav mr-auto">
+            <button class="btn btn-primary" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
         </ul>
         <ul class="navbar-nav topnav">
             <form class="searchbar">
@@ -39,45 +40,81 @@
         </ul>
     </nav>
     <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>USER ADMIN</h3>
-        </div>
-        <ul class="list-unstyled components">
-            <li><a href="index.html" aria-expanded="false"><i class="fa fa-home fa-fw"></i> Dashboard</a></li>
-            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
-                Details</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li><a href="payment.html"><i class="fa fa-credit-card fa-fw"></i> Payment Manager</a></li>
-                <li><a href="link.html"><i class="fa fa-link fa-fw"></i> Link Manager</a></li>
-                <li><a href="testimonial.html"><i class="fa fa-user fa-fw"></i> Testimonials Manager</a>
-                </li>
-                <li><a href="gallery.html"><i class="fas fa-camera-retro"></i> Gallery/Video Manager</a>
-                </li>
-                <li><a href="e-brochure.html"><i class="fas fa-file-pdf"></i> E-Brochure Manager</a></li>
-                <li><a href="details.html"><i class="fa fa-info fa-fw"></i> Details Manager</a></li>
-                <li><a href="awards.html"><i class="fa fa-trophy fa-fw"></i> Awards and Certification
-                        Manager</a>
-            </ul>
+        <ul class="list-unstyled">
+            <a id="sidebarclose"> <i class="fa fa-times"></i> </a>
+            <div class="text-center">
+                <div class="profile">
+                    <img class="profileimage" src="./src/images/person.jpg" alt="">
+                    <h4>John Doe</h4>
+                    <p>Company Name</p>
+                    <button class="btn btn-primary">Edit my IDy</button>
+                    <div class="row text-center">
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary">View IDy</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary">Share IDy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i> Dashboard</a>
             </li>
-            <li><a href="notification.html"><i class="fas fa-bell"></i> Notifications</a></li>
-            <li><a href="analytics.html"><i class="fas fa-chart-line"></i> Analytics</a></li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
+                    Details</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li><a>Profile Pic & Cover</a></li>
+                    <li><a>Personal Details</a></li>
+                    <li><a>Organisation Details</a></li>
+                    <li><a>Membership & Affiliations</a></li>
+                    <li><a>Awards & Achievements</a></li>
+                    <li><a>Certifications</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Video Links</a></li>
+                    <li><a>E-Brochure / Presentations</a></li>
+                    <li><a>Payment Details</a></li>
+                    <li><a>Other Links</a></li>
+                </ul>
+            </li>
+            <li><a href="payment.html"><i class="fa fa-credit-card fa-fw"></i>Templates</a></li>
+            <li><a href="link.html"><i class="fa fa-link fa-fw"></i>Settings</a></li>
+            <li><a href="testimonial.html"><i class="fa fa-user fa-fw"></i>Update History</a>
+            </li>
+            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i>Integrations</a>
+            </li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
         </ul>
     </nav>
     <div class="yellownav">
-        <button class="btn btn-info" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
-        <div class="linksofnav">
-            <div class="leftitems">
-                <a>Dashboard</a>
-                <a>Recent Updates</a>
-            </div>
-            <div class="rightitems">
-                <a><i class="fa fa-play"></i>Getting Started</a>
-                <a> <i class="fa fa-gift"></i> Refer a Friend</a>
+        <div class="leftitems">
+            <a>Dashboard</a>
+            <a>Recent Updates</a>
+        </div>
+        <div class="rightitems">
+            <a><i class="fa fa-play"></i>Getting Started</a>
+            <a> <i class="fa fa-gift"></i> Refer a Friend</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled bluebar">
+                    <li><a>Profile Pic & Cover</a></li>
+                    <li><a>Personal Details</a></li>
+                    <li><a>Organisation Details</a></li>
+                    <li><a>Membership & Affiliations</a></li>
+                    <li><a>Awards & Achievements</a></li>
+                    <li><a>Certifications</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Video Links</a></li>
+                    <li><a>E-Brochure / Presentations</a></li>
+                    <li><a>Payment Details</a></li>
+                    <li><a>Other Links</a></li>
+                </ul>
             </div>
         </div>
     </div>
-
 </body>
 
 

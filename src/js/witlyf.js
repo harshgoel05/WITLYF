@@ -3,3 +3,8 @@ $(document).ready(function () {
 		$("#sidebar").toggleClass("active");
 	});
 });
+$(document).ready(function () {
+	$("#sidebarclose").on("click", function () {
+		$("#sidebar").toggleClass("active");
+	});
+});

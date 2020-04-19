@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>MEMBERSHIPS/AFFILIATION</title>
+    <title>USER DASHBOARD</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="./src/css/witlyf.css">
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top superwhitenav">
+    <nav class="navbar navbar-expand-lg sticky-top witlyf-superwhitenav">
         <ul class="navbar-nav mr-auto">
-            <button class="btn btn-primary" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+            <button class="btn btn-primary" id="witlyf-sidebarCollapse"><i class="fa fa-bars"></i></button>
         </ul>
-        <ul class="navbar-nav topnav">
-            <form class="searchbar">
+        <ul class="navbar-nav witlyf-topnav">
+            <form class="witlyf-searchbar">
                 <input type="text" placeholder="" name="search">
                 <i class="fa fa-search"></i>
             </form>
@@ -39,12 +39,12 @@
             </li>
         </ul>
     </nav>
-    <nav id="sidebar">
+    <nav id="witlyf-sidebar">
         <ul class="list-unstyled">
-            <a id="sidebarclose"> <i class="fa fa-times"></i> </a>
+            <a id="witlyf-sidebarclose"> <i class="fa fa-times"></i> </a>
             <div class="text-center">
-                <div class="profile">
-                    <img class="profileimage" src="./src/images/person.jpg" alt="">
+                <div class="witlyf-profile">
+                    <img class="witlyf-profileimage" src="./src/images/person.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Company Name</p>
                     <button class="btn btn-primary">Edit my IDy</button>
@@ -58,59 +58,61 @@
                     </div>
                 </div>
             </div>
-            <li class="activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i> Dashboard</a>
+            <li class="witlyf-activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i>
+                    Dashboard</a>
             </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
+            <li class="witlyf-updatedetailsdropdown">
+                <a href="#witlyf-pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Update
                     Details</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a>Profile Pic & Cover</a></li>
-                    <li><a>Personal Details</a></li>
-                    <li><a>Organisation Details</a></li>
-                    <li><a>Membership & Affiliations</a></li>
-                    <li><a>Awards & Achievements</a></li>
-                    <li><a>Certifications</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Video Links</a></li>
-                    <li><a>E-Brochure / Presentations</a></li>
-                    <li><a>Payment Details</a></li>
-                    <li><a>Other Links</a></li>
+                <ul class="collapse list-unstyled" id="witlyf-pageSubmenu">
+                    <li><a href="profile.html">Profile Pic & Cover</a></li>
+                    <li><a href="personalDetails.html">Personal Details</a></li>
+                    <li><a href="orgDetails.html">Organisation Details</a></li>
+                    <li><a href="memberships.html">Membership & Affiliations</a></li>
+                    <li><a href="awardsAndAchivements.html">Awards & Achievements</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="videos.html">Video Links</a></li>
+                    <li><a href="e-brochure.html">E-Brochure / Presentations</a></li>
+                    <li><a href="payment.html">Payment Details</a></li>
+                    <li><a href="others.html">Other Links</a></li>
                 </ul>
             </li>
-            <li><a href="payment.html"><i class="fa fa-credit-card fa-fw"></i>Templates</a></li>
-            <li><a href="link.html"><i class="fa fa-link fa-fw"></i>Settings</a></li>
-            <li><a href="testimonial.html"><i class="fa fa-user fa-fw"></i>Update History</a>
+            <li><a href="templates.html"><i class="fa fa-credit-card fa-fw"></i>Templates</a></li>
+            <li><a href="settings.html"><i class="fa fa-link fa-fw"></i>Settings</a></li>
+            <li><a href="history.html"><i class="fa fa-user fa-fw"></i>Update History</a>
             </li>
-            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i>Integrations</a>
+            <li><a href="integrations.html"><i class="fas fa-camera-retro"></i>Integrations</a>
             </li>
             <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
         </ul>
     </nav>
-    <div class="yellownav">
-        <div class="leftitems">
+    <div class="witlyf-yellownav">
+        <div class="witlyf-leftitems">
             <a>Dashboard</a>
             <a>Recent Updates</a>
         </div>
-        <div class="rightitems">
+        <div class="witlyf-rightitems">
             <a><i class="fa fa-play"></i>Getting Started</a>
             <a> <i class="fa fa-gift"></i> Refer a Friend</a>
         </div>
     </div>
-    <div class="content">
+    <div class="witlyf-content">
         <div class="row">
             <div class="col-md-3">
-                <ul class="list-unstyled bluebar">
-                    <li><a href="#">Profile Pic & Cover</a></li>
-                    <li><a href="pers.html">Personal Details</a></li>
-                    <li><a href="#">Organisation Details</a></li>
-                    <li><a href="#">Membership & Affiliations</a></li>
-                    <li><a href="#">Awards & Achievements</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li class="active"><a href="#">Video Links</a></li>
-                    <li><a href="#">E-Brochure / Presentations</a></li>
-                    <li><a href="#">Payment Details</a></li>
-                    <li><a href="#">Other Links</a></li>
+                <ul class="list-unstyled witlyf-bluebar">
+                    <li><a href="profile.html">Profile Pic & Cover</a></li>
+                    <li><a href="personalDetails.html">Personal Details</a></li>
+                    <li><a href="orgDetails.html">Organisation Details</a></li>
+                    <li><a href="memberships.html">Membership & Affiliations</a></li>
+                    <li><a href="awardsAndAchivements.html">Awards & Achievements</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="videos.html">Video Links</a></li>
+                    <li><a href="e-brochure.html">E-Brochure / Presentations</a></li>
+                    <li><a href="payment.html">Payment Details</a></li>
+                    <li><a href="others.html">Other Links</a></li>
                 </ul>
             </div>
             <div class="col-md-8 mt-4">
@@ -122,60 +124,61 @@
                         <p class="card-text">Choose upto 6 affiliationss that you would like to show on your IDy</p>
                         <div class="row mb-4">
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                         </div>
                         <div class="row mb-4 ">
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                         </div>
                         <div class="row mb-4 ">
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                             <div class="col-lg-4 col-sm-12">
-                                <img src="person.jpg" style="width:150px;">
+                                <img src="./src/images/person.jpg" style="width:150px;">
                                 <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
                             </div>
                         </div>
-                        
 
-                            <a href="#" class="btn btn-primary mr-2">Save changes</a>
-                            <a href="#" class="btn btn-light">Cancel</a>
-                            <a href="#" class="btn btn-light" style="float: right; background-color: orange; color: white;">Preview</a>
-                            <hr>
-                            History
-                            <div class="text-right">
-                                <a href="#" class="btn btn-light mr-2" style="color: grey;">Last Week</a>
-                                <a href="#" class="btn btn-light" style="color: grey;">All Actions</a>
-                            </div>
-                            <table class="table table-bordered mt-4">
-                                <thead>
-                                  <tr>
+
+                        <a href="#" class="btn btn-primary mr-2">Save changes</a>
+                        <a href="#" class="btn btn-light">Cancel</a>
+                        <a href="#" class="btn btn-light"
+                            style="float: right; background-color: orange; color: white;">Preview</a>
+                        <hr>
+                        History
+                        <div class="text-right">
+                            <a href="#" class="btn btn-light mr-2" style="color: grey;">Last Week</a>
+                            <a href="#" class="btn btn-light" style="color: grey;">All Actions</a>
+                        </div>
+                        <table class="table table-bordered mt-4">
+                            <thead>
+                                <tr>
                                     <th scope="col">S No.</th>
                                     <th scope="col">Awards name</th>
                                     <th scope="col">Remarks</th>
@@ -183,66 +186,78 @@
                                     <th scope="col">Recent Update</th>
                                     <th scope="col">Action</th>
                                     <th scope="col">Delete</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
                                     <th scope="row">1</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
-                                    
+
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                  <tr>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">2.</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                  <tr>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">3.</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                  <tr>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">4.</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                  <tr>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">5.</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                  <tr>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                                <tr>
                                     <th scope="row">6.</th>
                                     <td>Awards 1</td>
                                     <td>This is a remark</td>
                                     <td>04/04/2020</td>
                                     <td>04/04/2020</td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
-                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"
+                                            style="background-color: orange; color: white;">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

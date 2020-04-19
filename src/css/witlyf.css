@@ -223,20 +223,13 @@ input {
 	height: 100%;
 	margin: 20px 10px 5px 40px;
 }
-.witlyf-profile-photo{
+.witlyf-profile-photo {
 	border-radius: 50%;
 }
-.witlyf-button1{
+.witlyf-button1 {
 	float: right;
-	margin-right:2px;
-
+	margin-right: 2px;
 }
-@media screen (max-width:800px) {
-	.witlyf-button {
-	  width:100%; 
-	}
-  }
-
 .witlyf-bluebar li {
 	border-bottom: 1px solid #a8a8a8;
 	padding: 10px;

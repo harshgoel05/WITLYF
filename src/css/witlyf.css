@@ -2,7 +2,9 @@
 /* ---------------------------------------------------
     		Common
 ----------------------------------------------------- */
-
+html {
+	overflow-x: hidden;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	background: hsl(0, 0%, 100%);
@@ -199,6 +201,22 @@ a:focus {
 	width: 83%;
 	float: right;
 }
+input {
+	font-size: 12px !important;
+}
+.textcenterrow {
+	margin: auto;
+	text-align: center;
+}
+.textcenterrow img {
+	width: 150px;
+}
+.textcenterrow input {
+	margin: auto;
+	width: 150px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
 .witlyf-content .col-md-3 {
 	background-color: #efefff;
 	padding: 40px 30px;
@@ -213,7 +231,19 @@ a:focus {
 .witlyf-bluebar li:nth-last-child(1) {
 	border-bottom: none;
 }
-
+.certiimag {
+	width: 300px;
+}
+.inputcerti {
+	width: 300px;
+}
+.videossection iframe {
+	width: 90%;
+}
+.gallerysection img {
+	width: 85%;
+	padding: 10px;
+}
 @media (max-width: 800px) {
 	.witlyf-content {
 		width: 100%;
@@ -222,6 +252,28 @@ a:focus {
 	}
 	.witlyf-content .col-md-3 {
 		display: none;
+	}
+	.certiimag {
+		width: 100px;
+	}
+	.inputcerti {
+		width: 100px;
+		height: 30px;
+	}
+	.awardscontent img {
+		width: 70%;
+	}
+	.awardscontent .awardsinput {
+		margin: 10px auto;
+		width: 70%;
+		height: 30px;
+	}
+	.videossection iframe {
+		margin-left: 20px;
+		width: 90%;
+	}
+	table {
+		font-size: 13px;
 	}
 }
 

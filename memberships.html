@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MEMBERSHIPS/AFFILIATION</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+
+    <link rel="stylesheet" href="./src/css/witlyf.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top superwhitenav">
+        <ul class="navbar-nav mr-auto">
+            <button class="btn btn-primary" id="sidebarCollapse"><i class="fa fa-bars"></i></button>
+        </ul>
+        <ul class="navbar-nav topnav">
+            <form class="searchbar">
+                <input type="text" placeholder="" name="search">
+                <i class="fa fa-search"></i>
+            </form>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-flag"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav id="sidebar">
+        <ul class="list-unstyled">
+            <a id="sidebarclose"> <i class="fa fa-times"></i> </a>
+            <div class="text-center">
+                <div class="profile">
+                    <img class="profileimage" src="./src/images/person.jpg" alt="">
+                    <h4>John Doe</h4>
+                    <p>Company Name</p>
+                    <button class="btn btn-primary">Edit my IDy</button>
+                    <div class="row text-center">
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary">View IDy</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary">Share IDy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="activenav"><a href="index.html" aria-expanded="false"><i class="fa fa-home"></i> Dashboard</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Update
+                    Details</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li><a>Profile Pic & Cover</a></li>
+                    <li><a>Personal Details</a></li>
+                    <li><a>Organisation Details</a></li>
+                    <li><a>Membership & Affiliations</a></li>
+                    <li><a>Awards & Achievements</a></li>
+                    <li><a>Certifications</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Video Links</a></li>
+                    <li><a>E-Brochure / Presentations</a></li>
+                    <li><a>Payment Details</a></li>
+                    <li><a>Other Links</a></li>
+                </ul>
+            </li>
+            <li><a href="payment.html"><i class="fa fa-credit-card fa-fw"></i>Templates</a></li>
+            <li><a href="link.html"><i class="fa fa-link fa-fw"></i>Settings</a></li>
+            <li><a href="testimonial.html"><i class="fa fa-user fa-fw"></i>Update History</a>
+            </li>
+            <li><a href="gallery.html"><i class="fas fa-camera-retro"></i>Integrations</a>
+            </li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+        </ul>
+    </nav>
+    <div class="yellownav">
+        <div class="leftitems">
+            <a>Dashboard</a>
+            <a>Recent Updates</a>
+        </div>
+        <div class="rightitems">
+            <a><i class="fa fa-play"></i>Getting Started</a>
+            <a> <i class="fa fa-gift"></i> Refer a Friend</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled bluebar">
+                    <li><a href="#">Profile Pic & Cover</a></li>
+                    <li><a href="pers.html">Personal Details</a></li>
+                    <li><a href="#">Organisation Details</a></li>
+                    <li><a href="#">Membership & Affiliations</a></li>
+                    <li><a href="#">Awards & Achievements</a></li>
+                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li class="active"><a href="#">Video Links</a></li>
+                    <li><a href="#">E-Brochure / Presentations</a></li>
+                    <li><a href="#">Payment Details</a></li>
+                    <li><a href="#">Other Links</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 mt-4">
+                <div class="card card shadow">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>MEMBERSHIPS/AFFILIATIONS</h4>
+                        </div>
+                        <p class="card-text">Choose upto 6 affiliationss that you would like to show on your IDy</p>
+                        <div class="row mb-4">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                        </div>
+                        <div class="row mb-4 ">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                        </div>
+                        <div class="row mb-4 ">
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <img src="person.jpg" style="width:150px;">
+                                <input type="text" name="image name" class="form-control mt-2" style="width:150px;">
+                            </div>
+                        </div>
+                        
+
+                            <a href="#" class="btn btn-primary mr-2">Save changes</a>
+                            <a href="#" class="btn btn-light">Cancel</a>
+                            <a href="#" class="btn btn-light" style="float: right; background-color: orange; color: white;">Preview</a>
+                            <hr>
+                            History
+                            <div class="text-right">
+                                <a href="#" class="btn btn-light mr-2" style="color: grey;">Last Week</a>
+                                <a href="#" class="btn btn-light" style="color: grey;">All Actions</a>
+                            </div>
+                            <table class="table table-bordered mt-4">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">S No.</th>
+                                    <th scope="col">Awards name</th>
+                                    <th scope="col">Remarks</th>
+                                    <th scope="col">Last Update</th>
+                                    <th scope="col">Recent Update</th>
+                                    <th scope="col">Action</th>
+                                    <th scope="col">Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2.</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3.</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4.</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5.</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6.</th>
+                                    <td>Awards 1</td>
+                                    <td>This is a remark</td>
+                                    <td>04/04/2020</td>
+                                    <td>04/04/2020</td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Update</a></td>
+                                    <td><a class="btn btn-light" href="#" role="button"  style="background-color: orange; color: white;">Delete</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+<script src="./src/js/witlyf.js"></script>
+</body>
+
+</html>

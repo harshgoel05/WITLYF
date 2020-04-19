@@ -228,7 +228,7 @@ input {
 	margin-right:2px;
 
 }
-@media screen and (max-width:800px) {
+@media screen (max-width:800px) {
 	.witlyf-button {
 	  width:100%; 
 	}

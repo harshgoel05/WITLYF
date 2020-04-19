@@ -203,6 +203,7 @@ fieldset label {
 	padding: 2px;
 	z-index: 100;
 	border: 1px solid grey;
+	font-weight: 400;
 }
 
 #progressbar li:nth-child(1):after {
@@ -240,3 +241,75 @@ fieldset label {
 	float: left;
 	margin-left: -300px !important;
 } */
+@media (max-width: 800px) {
+	.step1 {
+		margin-top: 120px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.step2 {
+		width: 90%;
+	}
+	.step2 .row {
+		width: 90%;
+		padding: 10px;
+		margin: 0;
+		padding-right: 0;
+	}
+	.step2 .card {
+		width: 80%;
+		padding: 10px;
+		margin: 0;
+		padding-right: 0;
+	}
+	.step3 .row {
+		flex-direction: column-reverse;
+	}
+	.step3 .col-lg-4,
+	.step3 .col-lg-8 {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	.step3 .row .card {
+		width: 90% !important;
+		margin-left: 35px !important	;
+		padding-left: 10px;
+	}
+	#witlyfform .step2 .action-button-previous {
+		margin-left: -30px;
+	}
+	#progressbar {
+		overflow: hidden;
+		color: rgb(218, 216, 216);
+		width: 95%;
+	}
+	#progressbar li {
+		list-style-type: none;
+		font-size: 12px;
+		width: 33.3%;
+		float: left;
+		position: relative;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	#progressbar li:nth-child(1):after {
+		content: "";
+		width: 70%;
+		height: 2px;
+		background: lightgray;
+		position: absolute;
+		left: 65%;
+		top: 23px;
+		z-index: 1;
+	}
+	#progressbar li:nth-child(2):after {
+		content: "";
+		width: 70%;
+		height: 2px;
+		background: lightgray;
+		position: absolute;
+		left: 65%;
+		top: 23px;
+		z-index: 1;
+	}
+}

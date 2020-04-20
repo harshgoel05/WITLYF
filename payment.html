@@ -23,19 +23,22 @@
             <button class="btn btn-primary" id="witlyf-sidebarCollapse"><i class="fa fa-bars"></i></button>
         </ul>
         <ul class="navbar-nav witlyf-topnav">
-            <form class="witlyf-searchbar">
-                <input type="text" placeholder="" name="search">
-                <i class="fa fa-search"></i>
-            </form>
+            <!-- <form class="witlyf-searchbar">
+                    <input type="text" placeholder="" name="search">
+                    <i class="fa fa-search"></i>
+                </form> -->
 
-            <li class="nav-item">
+            <li class="nav-item roundnavlinks">
                 <a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item roundnavlinks">
                 <a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item roundnavlinks">
                 <a class="nav-link" href="#"><i class="fa fa-flag"></i></a>
+            </li>
+            <li class="nav-item signoutnav">
+                <a class="nav-link" href="">Sign Out</a>
             </li>
         </ul>
     </nav>
@@ -80,6 +83,7 @@
                 </ul>
             </li>
             <li><a href="templates.html"><i class="fa fa-credit-card fa-fw"></i>Templates</a></li>
+            <li><a href="serviceStore.html"><i class="fa fa-gift fa-fw"></i>Service Store</a></li>
             <li><a href="settings.html"><i class="fa fa-link fa-fw"></i>Settings</a></li>
             <li><a href="history.html"><i class="fa fa-user fa-fw"></i>Update History</a>
             </li>
@@ -118,132 +122,134 @@
             <div class="col-md-8 mt-4">
                 <div class="card card shadow">
                     <div class="card-body">
-                    <div class="card-title mt-2 text-center">
-                        <h4 style="background-color: #999999; color: white;">
-                            IMPS/NEFT/RTGS
-                        </h4>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">Account name :</p>
+                        <div class="card-title mt-2 text-center">
+                            <h4 style="background-color: #999999; color: white;">
+                                IMPS/NEFT/RTGS
+                            </h4>
                         </div>
-                        <div class="col-lg-3 ml-2">
-                            <input type="text" class="form-control" placeholder="Lorem Ipsum PVT Ltd">
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">Account name :</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <input type="text" class="form-control" placeholder="Lorem Ipsum PVT Ltd">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">Account number :</p>
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">Account number :</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <input type="text" class="form-control" placeholder="123456798">
+                            </div>
                         </div>
-                        <div class="col-lg-3 ml-2">
-                            <input type="text" class="form-control" placeholder="123456798">
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">Account Type:</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <select class="custom-select custom-select-sm">
+                                    <option value="1">Current</option>
+                                    <option value="2">Savings</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">Account Type:</p>
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">IFSC Code :</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <input type="text" class="form-control" placeholder="SBIN00034">
+                            </div>
                         </div>
-                        <div class="col-lg-3 ml-2">
-                            <select class="custom-select custom-select-sm">
-                                <option value="1">Current</option>
-                                <option value="2">Savings</option>
-                              </select>
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">Bank Name :</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <input type="text" class="form-control" placeholder="Bank Name 2">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">IFSC Code :</p>
+                        <div class="row mb-2">
+                            <div class="col-lg-3 ml-2">
+                                <p class="card-text">Branch :</p>
+                            </div>
+                            <div class="col-lg-3 ml-2">
+                                <input type="text" class="form-control" placeholder="Branch location 2">
+                            </div>
                         </div>
-                        <div class="col-lg-3 ml-2">
-                            <input type="text" class="form-control" placeholder="SBIN00034">
+                        <div class="text-left ml-2">
+                            <a class="btn btn-primary" href="#" role="button">Copy Bank Details</a>
                         </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">Bank Name :</p>
-                        </div>
-                        <div class="col-lg-3 ml-2">
-                            <input type="text" class="form-control" placeholder="Bank Name 2">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-lg-3 ml-2">
-                            <p class="card-text">Branch :</p>
-                        </div>
-                        <div class="col-lg-3 ml-2">
-                            <input type="text" class="form-control" placeholder="Branch location 2">
-                        </div>
-                    </div>
-                    <div class="text-left ml-2">
-                        <a class="btn btn-primary" href="#" role="button">Copy Bank Details</a>
-                    </div>
-                    <hr>
-                    <div class="card-title mt-2 text-center">
-                        <h4  style="background-color: #999999; color: white;">
-                            FOR UPI
-                        </h4>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=200x200" alt="" title="HELLO" />
-                        <p class="card-text mt-2">Lorem Ipsum PVT Ltd<br>1234567890@okbizaxis</p>
-                    </div>
-                     <hr style="width: min-content;">
-                     <div class="text-center">
-                        <a class="btn btn-primary" href="#" role="button">Copy Mobile Number</a>
-                        <a href="#" class="btn btn-light"
-                            style=" background-color: orange; color: white;">UPLOAD</a>
-                    </div>
-                    <hr>
-                    <div class="card-title mt-2 text-center">
-                        <h4 style="background-color: #999999; color: white;">
-                            FOR ONLINE PAYMENTS
-                        </h4>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=200x200" alt="" title="HELLO" />
                         <hr>
-                        Available Payment Methods
+                        <div class="card-title mt-2 text-center">
+                            <h4 style="background-color: #999999; color: white;">
+                                FOR UPI
+                            </h4>
+                        </div>
+                        <div class="text-center">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=200x200"
+                                alt="" title="HELLO" />
+                            <p class="card-text mt-2">Lorem Ipsum PVT Ltd<br>1234567890@okbizaxis</p>
+                        </div>
+                        <hr style="width: min-content;">
+                        <div class="text-center">
+                            <a class="btn btn-primary" href="#" role="button">Copy Mobile Number</a>
+                            <a href="#" class="btn btn-light"
+                                style=" background-color: orange; color: white;">UPLOAD</a>
+                        </div>
                         <hr>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-wallet"></i>
+                        <div class="card-title mt-2 text-center">
+                            <h4 style="background-color: #999999; color: white;">
+                                FOR ONLINE PAYMENTS
+                            </h4>
                         </div>
-                        <div class="col-2">
-                            <i class="fas fa-tv"></i>
+                        <div class="text-center">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=200x200"
+                                alt="" title="HELLO" />
+                            <hr>
+                            Available Payment Methods
+                            <hr>
                         </div>
-                        <div class="col-3">
-                            <i class="fas fa-wallet"></i>
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <div class="col-3">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-tv"></i>
+                            </div>
                         </div>
-                        <div class="col-2">
-                            <i class="fas fa-wallet"></i>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="card-text">CARD</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="card-text">NBK</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="card-text">WALLET</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="card-text">UPI</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="card-text">EMI</p>
+                            </div>
                         </div>
-                        <div class="col-2">
-                            <i class="fas fa-tv"></i>
+                        <div class="text-center mt-4">
+                            <a class="btn btn-primary" href="#" role="button">Click Here For Payment</a>
+                            <a href="#" class="btn btn-light"
+                                style=" background-color: orange; color: white;">UPLOAD</a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <p class="card-text">CARD</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="card-text">NBK</p>
-                        </div>
-                        <div class="col-3">
-                            <p class="card-text">WALLET</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="card-text">UPI</p>
-                        </div>
-                        <div class="col-2">
-                            <p class="card-text">EMI</p>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4">
-                        <a class="btn btn-primary" href="#" role="button">Click Here For Payment</a>
-                        <a href="#" class="btn btn-light"
-                        style=" background-color: orange; color: white;">UPLOAD</a>
-                    </div>
 
                     </div>
 

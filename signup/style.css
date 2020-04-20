@@ -253,21 +253,10 @@ fieldset label {
 	.step3 .row {
 		flex-direction: column-reverse;
 	}
-	/* .step3 .col-lg-4,
-	.step3 .col-lg-8 {
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-	.step3 .row .card {
-		width: 90% !important;
-		margin-left: 35px !important	;
-		padding-left: 10px;
-	} */
 	.step3 .card{
 		width: 93% !important;
 		margin-left: 15px;
 	}
-
 	#progressbar {
 		overflow: hidden;
 		color: rgb(218, 216, 216);

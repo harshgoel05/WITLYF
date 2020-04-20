@@ -51,9 +51,9 @@ img {
 .step1 {
 	display: block;
 }
-.step2{
-padding-left: 100px;
-padding-right: 100px;
+.step2 {
+	padding-left: 100px;
+	padding-right: 100px;
 }
 fieldset label {
 	padding: 10px 10px 10px 10px;
@@ -101,7 +101,6 @@ fieldset label {
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 0px 10px 5px;
-	mar
 }
 
 #witlyfform .action-button:hover,
@@ -241,7 +240,7 @@ fieldset label {
 	float: left;
 	margin-left: -300px !important;
 } */
-.card-text{
+.card-text {
 	height: auto;
 }
 @media (max-width: 800px) {
@@ -253,7 +252,7 @@ fieldset label {
 	.step3 .row {
 		flex-direction: column-reverse;
 	}
-	.step3 .card{
+	.step3 .card {
 		width: 93% !important;
 		margin-left: 15px;
 	}
@@ -291,22 +290,22 @@ fieldset label {
 		top: 23px;
 		z-index: 1;
 	}
-	.step2{
+	.step2 {
 		padding-right: 0px;
 		padding-left: 20px;
 	}
-	.step1{
+	.step1 {
 		padding-left: 30px;
 	}
-	.step2 .card{
+	.step2 .card {
 		margin-bottom: 40px;
 		width: 95% !important	;
 	}
-	.step2 .col-lg-3 .col-sm-12{
-		padding : 0 !important;
+	.step2 .col-lg-3 .col-sm-12 {
+		padding: 0 !important;
 		margin: 0 !important;
 	}
-	html{
+	html {
 		overflow-x: hidden;
 	}
 }
@@ -317,30 +316,30 @@ fieldset label {
 .step1 .secondcol {
 	margin-top: 30px;
 }
-.delcard{
-	width:400px; 
-	text-align: left; 
-	height:100%;
-}
-.card1{
+.delcard {
+	width: 400px;
+	text-align: left;
 	height: 100%;
 }
-.step3 .btncontainer{
+.card1 {
+	height: 100%;
+}
+.step3 .btncontainer {
 	margin-top: 50px;
 }
-.alreadyauser{
+.alreadyauser {
 	position: absolute;
 	right: 20px;
 	top: 20px;
 }
 @media (max-width: 800px) {
-	.alreadyauser{
-	position: absolute;
-	right: 20px;
-	top: 77px;
+	.alreadyauser {
+		position: absolute;
+		right: 20px;
+		top: 77px;
+	}
 }
-}
-.step2 .card{
+.step2 .card {
 	width: 100%;
 	text-align: left;
 }

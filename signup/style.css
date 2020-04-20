@@ -40,7 +40,7 @@ img {
 	background: white;
 	border-radius: 0.5rem;
 	box-sizing: border-box;
-	width: 100%;
+	width: 100% !important;
 	margin: 0;
 	padding-bottom: 20px;
 	position: relative;
@@ -50,10 +50,8 @@ img {
 }
 .step1 {
 	display: block;
-	margin-top: 100px;
-	padding-left: 100px;
-	padding-right: 100px;
 }
+
 fieldset label {
 	padding: 10px 10px 10px 10px;
 }
@@ -100,7 +98,7 @@ fieldset label {
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 0px 10px 5px;
-	float: right;
+	mar
 }
 
 #witlyfform .action-button:hover,
@@ -117,7 +115,6 @@ fieldset label {
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 5px 10px 0px;
-	float: right;
 }
 
 #witlyfform .action-button-previous:hover,
@@ -241,6 +238,9 @@ fieldset label {
 	float: left;
 	margin-left: -300px !important;
 } */
+.card-text{
+	height: auto;
+}
 @media (max-width: 800px) {
 	.step1 {
 		margin-top: 120px;
@@ -249,6 +249,7 @@ fieldset label {
 	}
 	.step2 {
 		width: 90%;
+		padding-left: 10px;
 	}
 	.step2 .row {
 		width: 90%;
@@ -313,40 +314,33 @@ fieldset label {
 		z-index: 1;
 	}
 }
-.step1 .firstcol h1 {
-	color: #f67000;
-	font-weight: 500;
-	text-transform: uppercase;
-	font-size: 20px;
-	text-align: left;
-}
-.step1 .firstcol img {
-	text-align: right;
-}
-.step1 .firstcol .row {
-	margin-top: 30px;
-}
-.step1 .firstcol .col-md-8 {
-	text-align: left;
-	margin-left: -30px;
-	margin-top: 20px;
-}
-.step1 .firstcol p {
-	line-height: 17px;
-}
+
 .step1 .step1mainhead {
 	color: #f67000;
 }
 .step1 .secondcol {
 	margin-top: 30px;
 }
-@media (max-width: 800px) {
-	.firstcol {
-		text-align: center !important;
-	}
-	.step1 .firstcol .col-md-8 {
-		margin: auto;
-		text-align: center;
-	}
+.delcard{
+	width:400px; 
+	text-align: left; 
+	height:100%;
 }
-
+.card1{
+	height: 100%;
+}
+.step3 .btncontainer{
+	margin-top: 50px;
+}
+.alreadyauser{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+@media (max-width: 800px) {
+	.alreadyauser{
+	position: absolute;
+	right: 20px;
+	top: 77px;
+}
+}

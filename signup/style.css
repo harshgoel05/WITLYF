@@ -51,7 +51,10 @@ img {
 .step1 {
 	display: block;
 }
-
+.step2{
+padding-left: 100px;
+padding-right: 100px;
+}
 fieldset label {
 	padding: 10px 10px 10px 10px;
 }
@@ -247,26 +250,10 @@ fieldset label {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	.step2 {
-		width: 90%;
-		padding-left: 10px;
-	}
-	.step2 .row {
-		width: 90%;
-		padding: 10px;
-		margin: 0;
-		padding-right: 0;
-	}
-	.step2 .card {
-		width: 80%;
-		padding: 10px;
-		margin: 0;
-		padding-right: 0;
-	}
 	.step3 .row {
 		flex-direction: column-reverse;
 	}
-	.step3 .col-lg-4,
+	/* .step3 .col-lg-4,
 	.step3 .col-lg-8 {
 		margin: 0 !important;
 		padding: 0 !important;
@@ -275,10 +262,12 @@ fieldset label {
 		width: 90% !important;
 		margin-left: 35px !important	;
 		padding-left: 10px;
+	} */
+	.step3 .card{
+		width: 93% !important;
+		margin-left: 15px;
 	}
-	#witlyfform .step2 .action-button-previous {
-		margin-left: -30px;
-	}
+
 	#progressbar {
 		overflow: hidden;
 		color: rgb(218, 216, 216);
@@ -313,6 +302,24 @@ fieldset label {
 		top: 23px;
 		z-index: 1;
 	}
+	.step2{
+		padding-right: 0px;
+		padding-left: 20px;
+	}
+	.step1{
+		padding-left: 30px;
+	}
+	.step2 .card{
+		margin-bottom: 40px;
+		width: 95% !important	;
+	}
+	.step2 .col-lg-3 .col-sm-12{
+		padding : 0 !important;
+		margin: 0 !important;
+	}
+	html{
+		overflow-x: hidden;
+	}
 }
 
 .step1 .step1mainhead {
@@ -343,4 +350,8 @@ fieldset label {
 	right: 20px;
 	top: 77px;
 }
+}
+.step2 .card{
+	width: 100%;
+	text-align: left;
 }

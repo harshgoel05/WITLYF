@@ -232,6 +232,10 @@ input {
 }
 .witlyf-profile-photo {
 	border-radius: 50%;
+	position: relative;
+	left: 100px;
+	top: -60px;
+
 }
 .witlyf-button1 {
 	float: right;

@@ -250,20 +250,16 @@ input {
 }
 .witlyf-profile-photo {
 	border-radius: 50%;
-	position: relative;
+	position: absolute;
 	left: 10%;
-	top: -15%;
+	top: 73%;
 }
 .witlyf-social{
 	position: absolute;
 	margin-top: 10PX;
 	margin-left: 5px;
 }
-.witlyf-social-place{
-	::-webkit-input-placeholder {
-		text-align: center;
-	  }
-}
+
 
 .witlyf-award-image{
 	width: 100px;
@@ -273,7 +269,8 @@ input {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .witlyf-video{
-	width: 200px;
+	width: 210px;
+	height: 150px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .witlyf-button1 {

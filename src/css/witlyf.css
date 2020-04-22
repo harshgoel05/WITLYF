@@ -61,13 +61,28 @@ a:focus {
 	padding: 2px 4px;
 	margin-left: 10px;
 	font-size: 12px;
+	border: 1px solid transparent;
+	transition: 0.12s ease-in all;
+}
+.witlyf-topnav .nav-item.roundnavlinks:hover {
+	border-radius: 50%;
+	background: none;
+	padding: 2px 4px;
+	margin-left: 10px;
+	font-size: 12px;
+	border: 1px solid #b4b4b4;
 }
 .witlyf-topnav .signoutnav {
 	font-size: 14px;
-	padding-left: 20px;
+	margin-left: 10px;
+	background-color: #efefef;
+	border-radius: 18px;
+	border: 1px solid transparent;
+	transition: 0.12s ease-in all;
 }
 .witlyf-topnav .signoutnav:hover {
-	text-decoration: underline;
+	border: 1px solid #b4b4b4;
+	background: none;
 }
 .witlyf-searchbar {
 	padding-top: 13px;
@@ -441,7 +456,7 @@ input {
 	padding: 10px 20px;
 	margin: 10px;
 	background-color: #f4f9fd;
-	height: 230px;
+	height: 210px;
 	width: 100%;
 }
 .greycharts .col-md-4 {
@@ -469,7 +484,7 @@ input {
 }
 .charts-container {
 	margin: 7px 20px;
-	margin-left: 30px;
+	margin-left: 13px;
 }
 .charts-container * {
 	padding: 0;

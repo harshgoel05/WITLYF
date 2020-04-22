@@ -2,8 +2,8 @@
 /* ---------------------------------------------------
     		Common
 ----------------------------------------------------- */
-*{
-	font-family: 'Roboto', sans-serif !important; 
+* {
+	font-family: "Roboto", sans-serif !important;
 }
 html {
 	overflow-x: hidden;
@@ -93,7 +93,7 @@ a:focus {
 	padding: 2px 4px 4px 4px !important	;
 }
 .witlyf-searchbar input[type="text"] {
-	font-size: 17px;
+	font-size: 15px;
 	background: #efefef;
 	border: none;
 	border-radius: 13px 13px 13px 13px;
@@ -225,6 +225,8 @@ a:focus {
 .witlyf-content {
 	width: 83%;
 	float: right;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 input {
 	font-size: 12px !important;
@@ -254,25 +256,25 @@ input {
 	left: 10%;
 	top: -15%;
 }
-.witlyf-social{
+.witlyf-social {
 	position: absolute;
-	margin-top: 10PX;
+	margin-top: 10px;
 	margin-left: 5px;
 }
-.witlyf-social-place{
+.witlyf-social-place {
 	::-webkit-input-placeholder {
 		text-align: center;
-	  }
+	}
 }
 
-.witlyf-award-image{
+.witlyf-award-image {
 	width: 100px;
 }
-.witlyf-pdf1{
+.witlyf-pdf1 {
 	width: 200px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.witlyf-video{
+.witlyf-video {
 	width: 200px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -517,24 +519,29 @@ input {
 	padding: 10px !important;
 	border-left: 1px solid rgb(37, 37, 37);
 	background-color: rgb(252, 252, 252);
+	border-bottom: 1px solid rgb(37, 37, 37);
 }
-.charts-container .analyticscard:nth-child(1) {
+.charts-container .analyticscard:nth-child(4n + 1) {
 	padding: 10px !important;
 	border-left: none;
 }
+.charts-container .analyticscard:nth-child(4n + 1) {
+	padding: 10px !important;
+	border-left: none;
+}
+.charts-container .analyticscard:nth-child(n + 5) {
+	border-bottom: none;
+}
 .charts-container .col-md-9 h5 {
 	padding-bottom: 2px;
-	font-size: 17px;
-}
-.charts-container .col-md-9 p {
-	padding-bottom: 10px;
-	color: #c0881f;
-	font-size: 13px;
+	font-size: 21px;
+	padding-top: 10px;
 }
 .charts-container .col-md-3 {
 	display: block !important;
 }
 .charts-container .col-md-3 h6 {
+	float: right;
 	padding: 10px;
 	color: #ffa500;
 	font-size: 20px;
@@ -542,6 +549,10 @@ input {
 }
 .charts-container .progress {
 	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.charts-container .progress-last {
+	margin-top: 32px;
 	margin-bottom: 10px;
 }
 @media (max-width: 800px) {

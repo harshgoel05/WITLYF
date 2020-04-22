@@ -1,4 +1,9 @@
-* {
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/* ---------------------------------------------------
+    		Common
+----------------------------------------------------- */
+*{
+	font-family: 'Roboto', sans-serif !important; 
 	margin: 0;
 	padding: 0;
 }
